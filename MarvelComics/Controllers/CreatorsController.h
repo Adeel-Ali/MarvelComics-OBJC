@@ -11,7 +11,6 @@
 #import "BaseController.h"
 #import "UnirestClient.h"
 #import "HttpContext.h"
-#import "Creator.h"
 #import "ComicDataWrapper.h"
 #import "FormatTypeEnum.h"
 #import "FormatTypeEnumHelper.h"
@@ -20,20 +19,10 @@
 #import "EventDataWrapper.h"
 #import "SeriesDataWrapper.h"
 #import "StoryDataWrapper.h"
+#import "Creator.h"
 #import "CreatorDataWrapper.h"
 
 @interface CreatorsController : BaseController
-
-/**
-* Completion block definition for asynchronous call to getCreatorIndividual */
-typedef void (^CompletedGetCreatorIndividual)(BOOL success, HttpContext* context, Creator* response, NSError* error);
-
-/**
-* Fetches a single creator by id.
-* @param    creatorId    Required parameter: A single creator id.
-*/
-- (void) getCreatorIndividualAsyncWithCreatorId:(NSString*) creatorId
-                completionBlock:(CompletedGetCreatorIndividual) onCompleted;
 
 /**
 * Completion block definition for asynchronous call to getComicsCollectionByCreatorId */
@@ -192,6 +181,17 @@ typedef void (^CompletedGetCreatorStoryCollection)(BOOL success, HttpContext* co
                 orderBy:(NSString*) orderBy
                 series:(NSString*) series
                 completionBlock:(CompletedGetCreatorStoryCollection) onCompleted;
+
+/**
+* Completion block definition for asynchronous call to getCreatorIndividual */
+typedef void (^CompletedGetCreatorIndividual)(BOOL success, HttpContext* context, Creator* response, NSError* error);
+
+/**
+* Fetches a single creator by id.
+* @param    creatorId    Required parameter: A single creator id.
+*/
+- (void) getCreatorIndividualAsyncWithCreatorId:(NSString*) creatorId
+                completionBlock:(CompletedGetCreatorIndividual) onCompleted;
 
 /**
 * Completion block definition for asynchronous call to getCreatorCollection */

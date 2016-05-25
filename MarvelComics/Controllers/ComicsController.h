@@ -11,11 +11,11 @@
 #import "BaseController.h"
 #import "UnirestClient.h"
 #import "HttpContext.h"
-#import "Comic.h"
 #import "CharacterDataWrapper.h"
 #import "CreatorDataWrapper.h"
 #import "EventDataWrapper.h"
 #import "StoryDataWrapper.h"
+#import "Comic.h"
 #import "ComicDataWrapper.h"
 #import "FormatTypeEnum.h"
 #import "FormatTypeEnumHelper.h"
@@ -23,17 +23,6 @@
 #import "DateDescriptorEnumHelper.h"
 
 @interface ComicsController : BaseController
-
-/**
-* Completion block definition for asynchronous call to getComicIndividual */
-typedef void (^CompletedGetComicIndividual)(BOOL success, HttpContext* context, Comic* response, NSError* error);
-
-/**
-* Fetches a single comic by id.
-* @param    comicId    Required parameter: A single comic.
-*/
-- (void) getComicIndividualAsyncWithComicId:(NSString*) comicId
-                completionBlock:(CompletedGetComicIndividual) onCompleted;
 
 /**
 * Completion block definition for asynchronous call to getComicCharacterCollection */
@@ -162,6 +151,17 @@ typedef void (^CompletedGetComicStoryCollectionByComicId)(BOOL success, HttpCont
                 orderBy:(NSString*) orderBy
                 series:(NSString*) series
                 completionBlock:(CompletedGetComicStoryCollectionByComicId) onCompleted;
+
+/**
+* Completion block definition for asynchronous call to getComicIndividual */
+typedef void (^CompletedGetComicIndividual)(BOOL success, HttpContext* context, Comic* response, NSError* error);
+
+/**
+* Fetches a single comic by id.
+* @param    comicId    Required parameter: A single comic.
+*/
+- (void) getComicIndividualAsyncWithComicId:(NSString*) comicId
+                completionBlock:(CompletedGetComicIndividual) onCompleted;
 
 /**
 * Completion block definition for asynchronous call to getComicsCollection */

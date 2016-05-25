@@ -11,7 +11,6 @@
 #import "BaseController.h"
 #import "UnirestClient.h"
 #import "HttpContext.h"
-#import "Event.h"
 #import "CharacterDataWrapper.h"
 #import "ComicDataWrapper.h"
 #import "FormatTypeEnum.h"
@@ -21,20 +20,10 @@
 #import "CreatorDataWrapper.h"
 #import "SeriesDataWrapper.h"
 #import "StoryDataWrapper.h"
+#import "Event.h"
 #import "EventDataWrapper.h"
 
 @interface EventsController : BaseController
-
-/**
-* Completion block definition for asynchronous call to getEventIndividual */
-typedef void (^CompletedGetEventIndividual)(BOOL success, HttpContext* context, Event* response, NSError* error);
-
-/**
-* Fetches a single event by id.
-* @param    eventId    Required parameter: A single event.
-*/
-- (void) getEventIndividualAsyncWithEventId:(NSString*) eventId
-                completionBlock:(CompletedGetEventIndividual) onCompleted;
 
 /**
 * Completion block definition for asynchronous call to getEventCharacterCollection */
@@ -234,6 +223,17 @@ typedef void (^CompletedGetEventStoryCollection)(BOOL success, HttpContext* cont
                 orderBy:(NSString*) orderBy
                 series:(NSString*) series
                 completionBlock:(CompletedGetEventStoryCollection) onCompleted;
+
+/**
+* Completion block definition for asynchronous call to getEventIndividual */
+typedef void (^CompletedGetEventIndividual)(BOOL success, HttpContext* context, Event* response, NSError* error);
+
+/**
+* Fetches a single event by id.
+* @param    eventId    Required parameter: A single event.
+*/
+- (void) getEventIndividualAsyncWithEventId:(NSString*) eventId
+                completionBlock:(CompletedGetEventIndividual) onCompleted;
 
 /**
 * Completion block definition for asynchronous call to getEventsCollection */

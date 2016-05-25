@@ -11,7 +11,6 @@
 #import "BaseController.h"
 #import "UnirestClient.h"
 #import "HttpContext.h"
-#import "Series.h"
 #import "CharacterDataWrapper.h"
 #import "ComicDataWrapper.h"
 #import "FormatTypeEnum.h"
@@ -21,20 +20,10 @@
 #import "CreatorDataWrapper.h"
 #import "EventDataWrapper.h"
 #import "StoryDataWrapper.h"
+#import "Series.h"
 #import "SeriesDataWrapper.h"
 
 @interface SeriesController : BaseController
-
-/**
-* Completion block definition for asynchronous call to getSeriesIndividual */
-typedef void (^CompletedGetSeriesIndividual)(BOOL success, HttpContext* context, Series* response, NSError* error);
-
-/**
-* Fetches a single comic series by id.
-* @param    seriesId    Required parameter: Filter by series title.
-*/
-- (void) getSeriesIndividualAsyncWithSeriesId:(NSString*) seriesId
-                completionBlock:(CompletedGetSeriesIndividual) onCompleted;
 
 /**
 * Completion block definition for asynchronous call to getSeriesCharacterWrapper */
@@ -226,6 +215,17 @@ typedef void (^CompletedGetSeriesStoryCollection)(BOOL success, HttpContext* con
                 offset:(NSString*) offset
                 orderBy:(NSString*) orderBy
                 completionBlock:(CompletedGetSeriesStoryCollection) onCompleted;
+
+/**
+* Completion block definition for asynchronous call to getSeriesIndividual */
+typedef void (^CompletedGetSeriesIndividual)(BOOL success, HttpContext* context, Series* response, NSError* error);
+
+/**
+* Fetches a single comic series by id.
+* @param    seriesId    Required parameter: Filter by series title.
+*/
+- (void) getSeriesIndividualAsyncWithSeriesId:(NSString*) seriesId
+                completionBlock:(CompletedGetSeriesIndividual) onCompleted;
 
 /**
 * Completion block definition for asynchronous call to getSeriesCollection */

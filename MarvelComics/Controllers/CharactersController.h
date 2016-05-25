@@ -11,7 +11,6 @@
 #import "BaseController.h"
 #import "UnirestClient.h"
 #import "HttpContext.h"
-#import "Character.h"
 #import "ComicDataWrapper.h"
 #import "FormatTypeEnum.h"
 #import "FormatTypeEnumHelper.h"
@@ -20,20 +19,10 @@
 #import "EventDataWrapper.h"
 #import "SeriesDataWrapper.h"
 #import "StoryDataWrapper.h"
+#import "Character.h"
 #import "CharacterDataWrapper.h"
 
 @interface CharactersController : BaseController
-
-/**
-* Completion block definition for asynchronous call to getCharacterIndividual */
-typedef void (^CompletedGetCharacterIndividual)(BOOL success, HttpContext* context, Character* response, NSError* error);
-
-/**
-* Fetches a single character by id.
-* @param    characterId    Required parameter: A single character id.
-*/
-- (void) getCharacterIndividualAsyncWithCharacterId:(NSString*) characterId
-                completionBlock:(CompletedGetCharacterIndividual) onCompleted;
 
 /**
 * Completion block definition for asynchronous call to getComicsCharacterCollection */
@@ -192,6 +181,17 @@ typedef void (^CompletedGetCharacterStoryCollection)(BOOL success, HttpContext* 
                 orderBy:(NSString*) orderBy
                 series:(NSString*) series
                 completionBlock:(CompletedGetCharacterStoryCollection) onCompleted;
+
+/**
+* Completion block definition for asynchronous call to getCharacterIndividual */
+typedef void (^CompletedGetCharacterIndividual)(BOOL success, HttpContext* context, Character* response, NSError* error);
+
+/**
+* Fetches a single character by id.
+* @param    characterId    Required parameter: A single character id.
+*/
+- (void) getCharacterIndividualAsyncWithCharacterId:(NSString*) characterId
+                completionBlock:(CompletedGetCharacterIndividual) onCompleted;
 
 /**
 * Completion block definition for asynchronous call to getCharacterCollection */

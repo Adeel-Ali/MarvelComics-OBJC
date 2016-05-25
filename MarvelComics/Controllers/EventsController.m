@@ -9,93 +9,6 @@
 @implementation EventsController
 
 /**
-* Fetches a single event by id.
-* @param    eventId    Required parameter: A single event.
-* @return	Returns the void response from the API call */
-- (void) getEventIndividualAsyncWithEventId:(NSString*) eventId
-                completionBlock:(CompletedGetEventIndividual) onCompleted
-{
-    //the base uri for api requests
-    NSString* _baseUri = [NSString stringWithString: (NSString*) [Configuration BaseUri]];
-
-    //prepare query string for API call
-    NSMutableString* _queryBuilder = [NSMutableString stringWithString: _baseUri]; 
-    [_queryBuilder appendString: @"/events/{eventId}"];
-
-    //process optional query parameters
-    [APIHelper appendUrl: _queryBuilder withTemplateParameters: @{
-                    @"eventId": eventId
-                }];
-
-    //process optional query parameters
-    [APIHelper appendUrl: _queryBuilder withQueryParameters: @{
-                    @"apikey": [Configuration Apikey]
-                }];
-
-    //validate and preprocess url
-    NSString* _queryUrl = [APIHelper cleanUrl: _queryBuilder];
-
-    //preparing request headers
-    NSMutableDictionary* _headers = [[NSMutableDictionary alloc] initWithDictionary: @{
-        @"user-agent": @"APIMATIC 2.0",
-        @"accept": @"application/json",
-        @"referer": [Configuration Referer]
-    }];
-
-    //Remove null values from header collection in order to omit from request
-    [APIHelper removeNullValues: _headers];
-
-
-    //prepare the request and fetch response  
-    HttpRequest* _request = [[self clientInstance] get: ^(HttpRequest* _request) 
-    { 
-        [_request setQueryUrl: _queryUrl]; //set request url        
-        [_request setHeaders: _headers]; //set request headers
-
-    }];
-
-    //use the instance of the http client to make the actual call
-    [[self clientInstance]
-     executeAsString: _request
-     success: ^(id _context, HttpResponse *_response) {
-         //Error handling using HTTP status codes
-         NSError* _statusError = nil;
-
-         //Error handling using HTTP status codes 
-         if (_response.statusCode == 404)
-             _statusError = [[APIError alloc] initWithReason: @"Event not found."
-                                                    andCode: _response.statusCode
-                                                    andData: _response.rawBody];
-
-         else if((_response.statusCode < 200) || (_response.statusCode > 206)) //[200,206] = HTTP OK
-             _statusError = [[APIError alloc] initWithReason: @"HTTP Response Not OK"
-                                                    andCode: _response.statusCode
-                                                    andData: _response.rawBody];
-
-         if(_statusError != nil)
-         {
-             //announce completion with failure due to HTTP status code checking
-             onCompleted(NO, _context, nil, _statusError);
-         }
-         else
-         {
-             //return _response to API caller
-             NSString* _strResult = [(HttpStringResponse*)_response body];
-             Event* _result = (Event*) [APIHelper jsonDeserialize: _strResult
-                toClass: Event.class];
-
- 
-             //announce completion with success
-             onCompleted(YES, _context, _result, nil);
-         }
-     } failure:^(id _context, NSError *_error) {
- 
-         //announce completion with failure
-         onCompleted(NO, _context, nil, _error);
-     }];
-}
-
-/**
 * Fetches lists of characters filtered by an event id.
 * @param    eventId    Required parameter: A single event.
 * @param    comics    Optional parameter: Return only characters which appear in the specified comics (accepts a comma-separated list of ids).
@@ -734,6 +647,93 @@
              NSString* _strResult = [(HttpStringResponse*)_response body];
              StoryDataWrapper* _result = (StoryDataWrapper*) [APIHelper jsonDeserialize: _strResult
                 toClass: StoryDataWrapper.class];
+
+ 
+             //announce completion with success
+             onCompleted(YES, _context, _result, nil);
+         }
+     } failure:^(id _context, NSError *_error) {
+ 
+         //announce completion with failure
+         onCompleted(NO, _context, nil, _error);
+     }];
+}
+
+/**
+* Fetches a single event by id.
+* @param    eventId    Required parameter: A single event.
+* @return	Returns the void response from the API call */
+- (void) getEventIndividualAsyncWithEventId:(NSString*) eventId
+                completionBlock:(CompletedGetEventIndividual) onCompleted
+{
+    //the base uri for api requests
+    NSString* _baseUri = [NSString stringWithString: (NSString*) [Configuration BaseUri]];
+
+    //prepare query string for API call
+    NSMutableString* _queryBuilder = [NSMutableString stringWithString: _baseUri]; 
+    [_queryBuilder appendString: @"/events/{eventId}"];
+
+    //process optional query parameters
+    [APIHelper appendUrl: _queryBuilder withTemplateParameters: @{
+                    @"eventId": eventId
+                }];
+
+    //process optional query parameters
+    [APIHelper appendUrl: _queryBuilder withQueryParameters: @{
+                    @"apikey": [Configuration Apikey]
+                }];
+
+    //validate and preprocess url
+    NSString* _queryUrl = [APIHelper cleanUrl: _queryBuilder];
+
+    //preparing request headers
+    NSMutableDictionary* _headers = [[NSMutableDictionary alloc] initWithDictionary: @{
+        @"user-agent": @"APIMATIC 2.0",
+        @"accept": @"application/json",
+        @"referer": [Configuration Referer]
+    }];
+
+    //Remove null values from header collection in order to omit from request
+    [APIHelper removeNullValues: _headers];
+
+
+    //prepare the request and fetch response  
+    HttpRequest* _request = [[self clientInstance] get: ^(HttpRequest* _request) 
+    { 
+        [_request setQueryUrl: _queryUrl]; //set request url        
+        [_request setHeaders: _headers]; //set request headers
+
+    }];
+
+    //use the instance of the http client to make the actual call
+    [[self clientInstance]
+     executeAsString: _request
+     success: ^(id _context, HttpResponse *_response) {
+         //Error handling using HTTP status codes
+         NSError* _statusError = nil;
+
+         //Error handling using HTTP status codes 
+         if (_response.statusCode == 404)
+             _statusError = [[APIError alloc] initWithReason: @"Event not found."
+                                                    andCode: _response.statusCode
+                                                    andData: _response.rawBody];
+
+         else if((_response.statusCode < 200) || (_response.statusCode > 206)) //[200,206] = HTTP OK
+             _statusError = [[APIError alloc] initWithReason: @"HTTP Response Not OK"
+                                                    andCode: _response.statusCode
+                                                    andData: _response.rawBody];
+
+         if(_statusError != nil)
+         {
+             //announce completion with failure due to HTTP status code checking
+             onCompleted(NO, _context, nil, _statusError);
+         }
+         else
+         {
+             //return _response to API caller
+             NSString* _strResult = [(HttpStringResponse*)_response body];
+             Event* _result = (Event*) [APIHelper jsonDeserialize: _strResult
+                toClass: Event.class];
 
  
              //announce completion with success
