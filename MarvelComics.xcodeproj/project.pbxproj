@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+
+/* Begin PBXAggregateTarget section */
+        AAEE5E87CAD05D168656264B /* Framework */ = {
+            isa = PBXAggregateTarget;
+            buildConfigurationList = AA6B40043ACECBE13E13500A /* Build configuration list for PBXAggregateTarget "Framework" */;
+            buildPhases = (
+                AACF2FCBE910DF27909EEA33 /* MultiBuild Framework */,
+            );
+            dependencies = (
+                AA64289540A97CFC567617A7 /* PBXTargetDependency */,
+            );
+            name = Framework;
+            productName = Framework;
+        };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+        AA156D6B8C98CDFEC6517A86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6C52504A381F7C41B67182 /* Foundation.framework */; };
+        AAB95DE29AE69E555D2350F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6C52504A381F7C41B67182 /* Foundation.framework */; };
+        AAB6FF0AA3C1D0F2B493849F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA12F8206E62E7B415ACF0E1 /* UIKit.framework */; };
+        AAEC3975AAF8AA1308CB9DB7 /* libMarvelComics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFFB6F12C34BFAB07465B52 /* libMarvelComics.a */; };
+        AA2F009821D5B379D796665A /* APIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6FB783652324EFB3E7BA31 /* APIHelper.m */; };
+        AA3FC84281C8B49DAC26F961 /* APIError.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1C1510C4F3D56A3A951CFD /* APIError.m */; };
+        AABE48236E273EF1DB3275E0 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCE585F7417595F3776274 /* Configuration.m */; };
+		AA888FE56C5C6B97F387B3E4 /* FormatTypeEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = AA691DD41EB291C72549767D /* FormatTypeEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD81CB2B92569F65D5F85F3 /* FormatTypeEnumHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD7C399C286583573D4549C /* FormatTypeEnumHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE18BCCA90071B59A9C2C11 /* FormatTypeEnumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB1A0D79A607A0FCCA087DA /* FormatTypeEnumHelper.m */; };
+		AA8065646B2C62D746F5CCFE /* DateDescriptorEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB915C64C5CF10A03083DBE /* DateDescriptorEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA48B6E7C997C6979D5B5F52 /* DateDescriptorEnumHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA231080F9C0B77542E45235 /* DateDescriptorEnumHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7921CF7D257EECDAF2706D /* DateDescriptorEnumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA325230058D481E25FDF13E /* DateDescriptorEnumHelper.m */; };
+		AAC061F820D21962ED286C3E /* ComicDataWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA89ABDEB95E35A523DDF753 /* ComicDataWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB2612472517C51B50504D4 /* ComicDataWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA06FF1CA9CECC8A5091250E /* ComicDataWrapper.m */; };
+		AAF21C703380CBC9A51102D9 /* ComicDataContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0847BC88F5BC63A92EC596 /* ComicDataContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAFB997838178E4C5D031C14 /* ComicDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB30C1082E22DF66A3E69F8 /* ComicDataContainer.m */; };
+		AA90A58CD075C42D1BDAC213 /* Comic.h in Headers */ = {isa = PBXBuildFile; fileRef = AA38D02FAC76F0D9F5DD2C02 /* Comic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA4379700084284AC9475A9A /* Comic.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8E0C9328149DF1BA4C0016 /* Comic.m */; };
+		AA1BD1CAB964C238A9D31FA2 /* TextObject.h in Headers */ = {isa = PBXBuildFile; fileRef = AA1F65C6F294A6511F7C2E4B /* TextObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAF020F01BCB11F5AD193E45 /* TextObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AA723A8DF536F57B8934AA92 /* TextObject.m */; };
+		AA28A64D8FD37E108FDB1200 /* UrlModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8C2323CA51609A6102FA66 /* UrlModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAAEE46878D4B318C5FC6C02 /* UrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA52657BFDD6D56DF5EAB7BB /* UrlModel.m */; };
+		AAAEF3CF52330DABC2CE8715 /* SeriesSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC10961A143E49A08E31838 /* SeriesSummary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB718CD46913720F0F33D31 /* SeriesSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = AA67704EF73DFF66FFFD4BFB /* SeriesSummary.m */; };
+		AAA900D5918D907805BEA408 /* ComicSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = AA23A2216789AFB4F0DB37CD /* ComicSummary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA363348F55990D2B61D3CE4 /* ComicSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9F414ECE9B35E2078C177D /* ComicSummary.m */; };
+		AA5DB4767ABA37C50109269D /* ComicDate.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0D044C6B36DEEC2F582AF9 /* ComicDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA93E8F24F27CF23919DE724 /* ComicDate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFA8C4563F812E556CC3AE8 /* ComicDate.m */; };
+		AAF995732AD819678D6D8B16 /* ComicPrice.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC1BC0C72AC136979CD7697 /* ComicPrice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAF9C10774AB757E2A5BCCCA /* ComicPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAB68E5EB81CD48AC4763E2 /* ComicPrice.m */; };
+		AAB3A35368402D11D617E7C2 /* Thumbnail.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7B4CB513D65C5D03CD0666 /* Thumbnail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AABACA3DB16E3DD0D33B8F48 /* Thumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA006DB07C9398A176458A04 /* Thumbnail.m */; };
+		AAF9095C275F09ECF2F2B519 /* Image.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3518B900ADF5EA88C38DDC /* Image.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA11A522F7AB90034284F2E3 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFA32EEC1127D744E331158 /* Image.m */; };
+		AA501498A9436847F1331FCB /* CreatorList.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6D1CB997991386EE5BD253 /* CreatorList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD9C6523B7D28F7EF7D4540 /* CreatorList.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0342F1F5101E0CFE99B3E7 /* CreatorList.m */; };
+		AA629885CB6059F5A7042D1E /* CreatorSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0F0B01A009C2B7123967FF /* CreatorSummary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD46954EF98ACB5559F66DB /* CreatorSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF56A71297247B2278CD79F /* CreatorSummary.m */; };
+		AA995871B96B2B18B1F17F63 /* CharacterList.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB8C4E8FDA32DBF3F8580D7 /* CharacterList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7F1E91C2131B80062B9849 /* CharacterList.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA9EA3B3785282FAAEE5F9B /* CharacterList.m */; };
+		AABAB776BF47F7005E2DEAD5 /* CharacterSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = AA83E19EC3F5A3062A4377F9 /* CharacterSummary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE3FC124BAF8271569A849C /* CharacterSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8CC9779CCAA8B6BA760CEA /* CharacterSummary.m */; };
+		AA591DC980F0604392E5C395 /* StoryList.h in Headers */ = {isa = PBXBuildFile; fileRef = AA98086AD421DC55E4DA2E3E /* StoryList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAA24F2E7E0EEEF2EA8E3A89 /* StoryList.m in Sources */ = {isa = PBXBuildFile; fileRef = AA06F4E8999D401B8EEBDC07 /* StoryList.m */; };
+		AAE12108177AA516EFFF3A91 /* StorySummary.h in Headers */ = {isa = PBXBuildFile; fileRef = AA1967BDBEDAC4F67B24A24C /* StorySummary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA205F527EF1F01258AA48C7 /* StorySummary.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1C187836AC607504A1904B /* StorySummary.m */; };
+		AA3D68555965ED3B07BB28C3 /* EventList.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8B8EE93A2ECCB010780DFC /* EventList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA5F82A9002FD2A58B74ACC0 /* EventList.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB476E49D93CF7D34941FA8 /* EventList.m */; };
+		AA330ABFDB63252DD7B9F0AE /* EventSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE0DD5850B4E9A4350856D7 /* EventSummary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA2A4A3BBFC0E76811CA07C2 /* EventSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFD0DF3AE446861B4674ACE /* EventSummary.m */; };
+		AADB6AE1728D0E0CE1EC486F /* EventDataWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF1C049261AC5C3A4913C18 /* EventDataWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA390B28D2AC9388D393FAAD /* EventDataWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF601BBFA371A8D0E073ECF /* EventDataWrapper.m */; };
+		AA289CCD4757163CFCABFF92 /* EventDataContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD5A5461C96028202CEF87A /* EventDataContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA76465D40C5A7C714CC7330 /* EventDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA837A6D4D38367D2A89F41F /* EventDataContainer.m */; };
+		AA3B7425C49E8E8073E0808D /* Event.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7C9746508A01971549E3ED /* Event.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA448FE6531B3670B8D5E6A0 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1910BDD10ED2C6CC17A60F /* Event.m */; };
+		AA74967A7A2A7CC974A68860 /* ComicList.h in Headers */ = {isa = PBXBuildFile; fileRef = AA4A08BF1B1EDB31E462BD55 /* ComicList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AADAE894302957C302CB7DF7 /* ComicList.m in Sources */ = {isa = PBXBuildFile; fileRef = AA97BFB8177BF92E8CDBA91E /* ComicList.m */; };
+		AA432BB615347D76E54B1E95 /* SeriesList.h in Headers */ = {isa = PBXBuildFile; fileRef = AA031F3CF9A7BC2677A7A842 /* SeriesList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA48367DA3AEF9B077CB1EF3 /* SeriesList.m in Sources */ = {isa = PBXBuildFile; fileRef = AACB12B9A4C0EEAA1BA4B45F /* SeriesList.m */; };
+		AA2B5681A826BF3CB4011092 /* SeriesDataWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AAEAFEABA65541B7893B4009 /* SeriesDataWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA218CAA2BCCED0CD8EB63B9 /* SeriesDataWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE708B19280C443C206DAAE /* SeriesDataWrapper.m */; };
+		AA1DC01B26E46385A537BA1E /* SeriesDataContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = AAACA7B76738D699CB39F313 /* SeriesDataContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA2FE555ACE8F63A7C8F0B53 /* SeriesDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA937C17947D5CD1A0019706 /* SeriesDataContainer.m */; };
+		AA19EB9449DDC72DA6F4E2BE /* Series.h in Headers */ = {isa = PBXBuildFile; fileRef = AA71DF644E9DF4E6376C3BC8 /* Series.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAAE523072B3C8868CCC72B2 /* Series.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6C84B6CC3D03E0E04C07B9 /* Series.m */; };
+		AA9A91CBFE9FC7872D3CCE7E /* StoryDataWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA41DA27B553121C6D133FEC /* StoryDataWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA0CC349AE1FBD4C64032190 /* StoryDataWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA12A4735C81DF2E85CEE989 /* StoryDataWrapper.m */; };
+		AA26514A93F66DE725AFBFF6 /* StoryDataContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB336BA0F7DA4C6AE361536 /* StoryDataContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA4DFDE294659535231E5DCF /* StoryDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA508C5F592E70B2E2B5CAE6 /* StoryDataContainer.m */; };
+		AAA51962AE1DDCC776624AFD /* Story.h in Headers */ = {isa = PBXBuildFile; fileRef = AA762EDFE4FBEB2006D3A2ED /* Story.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA1C33AB60F3605B4FD0E927 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEDE60FA248270762C5231A /* Story.m */; };
+		AA640E7D1F752D2EFA027F51 /* Character.h in Headers */ = {isa = PBXBuildFile; fileRef = AA4B3A36502ED1C503FC64D8 /* Character.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD064B180322E19A8DBDC6E /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = AADDD88EF21C46DB2D47B276 /* Character.m */; };
+		AA3B09123D33490133674A6B /* CharacterDataWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AAA8773BDD3BE0809B523246 /* CharacterDataWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA35E0AA56D156C862BBF6FD /* CharacterDataWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7ADF53CD51EEE65F827EE4 /* CharacterDataWrapper.m */; };
+		AA3D0E9CD6EB5886E4D02247 /* CharacterDataContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2FB6CCD5DB9C4CBEC256A9 /* CharacterDataContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA1069D90143C794EF18B404 /* CharacterDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = AABA2CC0D16FEC1644229789 /* CharacterDataContainer.m */; };
+		AAEE39E13646CD65FAA46965 /* CreatorDataWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF4C132D9AB82B07DBBD1F7 /* CreatorDataWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB262C3D8CC656DB79DEFC7 /* CreatorDataWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEA5AAC8E2BF8C1FEDA162 /* CreatorDataWrapper.m */; };
+		AAAF8B480F5DC9730E782F5F /* CreatorDataContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = AA4EBC2CBE48B5C30FD5FC52 /* CreatorDataContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7AE478487CA60EBCE9C609 /* CreatorDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEBA30216CE136E1C8CA704 /* CreatorDataContainer.m */; };
+		AA9537E0E9F2269D3D10E1BB /* Creator.h in Headers */ = {isa = PBXBuildFile; fileRef = AA67C085A96488F9C34491C8 /* Creator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAA59FBB6C35FAD99178B996 /* Creator.m in Sources */ = {isa = PBXBuildFile; fileRef = AAADBEDB833F79E695BFE085 /* Creator.m */; };
+		AA382613526F5C349166FBF1 /* CharactersController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA1A1504F93C482B0380C516 /* CharactersController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAF58AC5930372CD90FF4B35 /* CharactersController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4703B1407DED93B462279A /* CharactersController.m */; };
+		AA5F845E164EA5A5480C1C8D /* ComicsController.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC06996581F8D15DC1591FB /* ComicsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA663766F7252C65D4471137 /* ComicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA969B29D9ACFBC1B38FFD35 /* ComicsController.m */; };
+		AA1C8837647E18706EDB576B /* CreatorsController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA229BC3756A383AD5326766 /* CreatorsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA2CCDFF6625E11579778D0E /* CreatorsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AABA5A121DFBBE0E7DEEAAF5 /* CreatorsController.m */; };
+		AACA5C44BC3F361B8BD153F5 /* EventsController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA258F08647C62D19DD52CAB /* EventsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA5AC433CC1F96CB20D48EF9 /* EventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEB6D42B19AB6F2AF0BFE97 /* EventsController.m */; };
+		AAA83D1202C733C62E90E587 /* SeriesController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3B71FC902C847D00E12283 /* SeriesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD3A1508B9EE3373F60342A /* SeriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AADB1764AE7DF18D95557C7B /* SeriesController.m */; };
+		AAE7BF3CD2B4FAE689A69F2E /* StoriesController.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD6C82703B51A29B7396D93 /* StoriesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAC04098B81E89417DF527CC /* StoriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0B8A88E554108B6F7DE777 /* StoriesController.m */; };
+        AAD9244039DF31452C9D7C2B /* Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFDA2A62B62D6847BB95686 /* Configuration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA9A82CCE1219D4C5910FE3B /* APIError.h in Headers */ = {isa = PBXBuildFile; fileRef = AA48BFFBF934C1B6D2406E77 /* APIError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AAB3AA4B658C5443700D0C0C /* APIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA49A4D678BA2CF98CE5E8A7 /* APIHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA5C98767EC06D4E40B57A79 /* JSONValueTransformer+NSDate.h in Headers */ = {isa = PBXBuildFile; fileRef = AA575224753AD22C62664B85 /* JSONValueTransformer+NSDate.h */; };
+        AA5D573CBB0B8B855EA01619 /* JSONValueTransformer+NSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA49AA68151B551DE5F5CD4F /* JSONValueTransformer+NSDate.m */; };
+
+        AA561654D3DF3A6B4926FBE4 /* IHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AA1173ED2E32674C48620A64 /* IHttpClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AAA4DBB5CE589B5B0303FD74 /* HttpContext.h in Headers */ = {isa = PBXBuildFile; fileRef = AA406D274803136B567B1E87 /* HttpContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AADE4B211C778689E60B2D58 /* HttpContext.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF0E81765DC544641E6641 /* HttpContext.m */; };
+
+        AADD0D6E9D0D2ECB46296055 /* UnirestClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AACAA536E84B6D2BF2CDE608 /* UnirestClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AAC751CC6398471D8AE95DF2 /* UnirestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D7A678B8A985E2C50CBFF /* UnirestClient.m */; };
+        AAD8F51F714DD5966CCD659B /* HttpBodyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6B29F99CA666FECC5C487E /* HttpBodyRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA751EC3D8D1E1F02BC41D50 /* HttpBodyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA956F01D2F5D670DC35B362 /* HttpBodyRequest.m */; };
+        AA033D32966F32BFBD65DD34 /* HttpMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = AA31975203C7EAF86B56F415 /* HttpMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA727179A75A81C7BFF5708F /* HttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA98C9716BFF8AE5BFC28898 /* HttpRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA1A7ED3A893EFFCD4DDD12E /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA87A2CD71372D1DB3FF6520 /* HttpRequest.m */; };
+        AAFBD14918A6E076A0BF62B7 /* HttpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF67FE2ADA5B77379090F09 /* HttpResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA19178EE1D12F29A92B4F31 /* HttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE099E73BF6EE469D4AB217 /* HttpResponse.m */; };
+        AA9312BDFDCA04EB5F7358C2 /* HttpStringResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA43B3EAF2E61EDA56E566C3 /* HttpStringResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA9B8CABE328A66C2F9C101E /* HttpStringResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA78889B46E63B2815E8A97C /* HttpStringResponse.m */; };
+        AABB789B7FACBAA15967C8E9 /* BaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5D18C97F1ED2716A752AA8 /* BaseController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AAD0FE4E6546B42C42539D57 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA940686A027FAC0683E87AE /* BaseController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+        AACEBD8E9E09F53ADB403022 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = AA9E028AD27263E3C2D60210 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = AA28707B011D40DC5FCAABD7;
+            remoteInfo = MarvelComics;
+        };
+        AACEBD8E9E09F53ADB403022 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = AAD86B0C4A909E780CCAF44D /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = AA28707B011D40DC5FCAABD7;
+            remoteInfo = MarvelComics;
+        };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+        AA6976EEF676DCB4C0327BF2 /* CopyFiles */ = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "include/$(PRODUCT_NAME)";
+            dstSubfolderSpec = 16;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+        AAFFB6F12C34BFAB07465B52 /* libMarvelComics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMarvelComics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+        AA6C52504A381F7C41B67182 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+        AAD0DA7640475994DA60613B /* MarvelComics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarvelComics-Prefix.pch"; sourceTree = "<group>"; };
+        AA12F8206E62E7B415ACF0E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+        AA6FB783652324EFB3E7BA31 /* APIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIHelper.m; sourceTree = "<group>"; };
+        AA49A4D678BA2CF98CE5E8A7 /* APIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHelper.h; sourceTree = "<group>"; };		
+        AA1C1510C4F3D56A3A951CFD /* APIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIError.m; sourceTree = "<group>"; };
+        AA48BFFBF934C1B6D2406E77 /* APIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIError.h; sourceTree = "<group>"; };
+        AAFCE585F7417595F3776274 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+        AA575224753AD22C62664B85 /* JSONValueTransformer+NSDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+NSDate.h"; sourceTree = "<group>"; };
+        AA49AA68151B551DE5F5CD4F /* JSONValueTransformer+NSDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+NSDate.m"; sourceTree = "<group>"; };
+        AAFDA2A62B62D6847BB95686 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		AA691DD41EB291C72549767D /* FormatTypeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormatTypeEnum.h; path = Models/FormatTypeEnum.h; sourceTree = "<group>"; };
+		AAD7C399C286583573D4549C /* FormatTypeEnumHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormatTypeEnumHelper.h; path = Models/FormatTypeEnumHelper.h; sourceTree = "<group>"; };
+		AAB1A0D79A607A0FCCA087DA /* FormatTypeEnumHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormatTypeEnumHelper.m; path = Models/FormatTypeEnumHelper.m; sourceTree = "<group>"; };
+		AAB915C64C5CF10A03083DBE /* DateDescriptorEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateDescriptorEnum.h; path = Models/DateDescriptorEnum.h; sourceTree = "<group>"; };
+		AA231080F9C0B77542E45235 /* DateDescriptorEnumHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateDescriptorEnumHelper.h; path = Models/DateDescriptorEnumHelper.h; sourceTree = "<group>"; };
+		AA325230058D481E25FDF13E /* DateDescriptorEnumHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateDescriptorEnumHelper.m; path = Models/DateDescriptorEnumHelper.m; sourceTree = "<group>"; };
+		AA89ABDEB95E35A523DDF753 /* ComicDataWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComicDataWrapper.h; path = Models/ComicDataWrapper.h; sourceTree = "<group>"; };
+		AA06FF1CA9CECC8A5091250E /* ComicDataWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComicDataWrapper.m; path = Models/ComicDataWrapper.m; sourceTree = "<group>"; };
+		AA0847BC88F5BC63A92EC596 /* ComicDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComicDataContainer.h; path = Models/ComicDataContainer.h; sourceTree = "<group>"; };
+		AAB30C1082E22DF66A3E69F8 /* ComicDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComicDataContainer.m; path = Models/ComicDataContainer.m; sourceTree = "<group>"; };
+		AA38D02FAC76F0D9F5DD2C02 /* Comic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comic.h; path = Models/Comic.h; sourceTree = "<group>"; };
+		AA8E0C9328149DF1BA4C0016 /* Comic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comic.m; path = Models/Comic.m; sourceTree = "<group>"; };
+		AA1F65C6F294A6511F7C2E4B /* TextObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextObject.h; path = Models/TextObject.h; sourceTree = "<group>"; };
+		AA723A8DF536F57B8934AA92 /* TextObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextObject.m; path = Models/TextObject.m; sourceTree = "<group>"; };
+		AA8C2323CA51609A6102FA66 /* UrlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UrlModel.h; path = Models/UrlModel.h; sourceTree = "<group>"; };
+		AA52657BFDD6D56DF5EAB7BB /* UrlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UrlModel.m; path = Models/UrlModel.m; sourceTree = "<group>"; };
+		AAC10961A143E49A08E31838 /* SeriesSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeriesSummary.h; path = Models/SeriesSummary.h; sourceTree = "<group>"; };
+		AA67704EF73DFF66FFFD4BFB /* SeriesSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeriesSummary.m; path = Models/SeriesSummary.m; sourceTree = "<group>"; };
+		AA23A2216789AFB4F0DB37CD /* ComicSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComicSummary.h; path = Models/ComicSummary.h; sourceTree = "<group>"; };
+		AA9F414ECE9B35E2078C177D /* ComicSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComicSummary.m; path = Models/ComicSummary.m; sourceTree = "<group>"; };
+		AA0D044C6B36DEEC2F582AF9 /* ComicDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComicDate.h; path = Models/ComicDate.h; sourceTree = "<group>"; };
+		AAFA8C4563F812E556CC3AE8 /* ComicDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComicDate.m; path = Models/ComicDate.m; sourceTree = "<group>"; };
+		AAC1BC0C72AC136979CD7697 /* ComicPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComicPrice.h; path = Models/ComicPrice.h; sourceTree = "<group>"; };
+		AAAB68E5EB81CD48AC4763E2 /* ComicPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComicPrice.m; path = Models/ComicPrice.m; sourceTree = "<group>"; };
+		AA7B4CB513D65C5D03CD0666 /* Thumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Thumbnail.h; path = Models/Thumbnail.h; sourceTree = "<group>"; };
+		AA006DB07C9398A176458A04 /* Thumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Thumbnail.m; path = Models/Thumbnail.m; sourceTree = "<group>"; };
+		AA3518B900ADF5EA88C38DDC /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Image.h; path = Models/Image.h; sourceTree = "<group>"; };
+		AAFA32EEC1127D744E331158 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Image.m; path = Models/Image.m; sourceTree = "<group>"; };
+		AA6D1CB997991386EE5BD253 /* CreatorList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatorList.h; path = Models/CreatorList.h; sourceTree = "<group>"; };
+		AA0342F1F5101E0CFE99B3E7 /* CreatorList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatorList.m; path = Models/CreatorList.m; sourceTree = "<group>"; };
+		AA0F0B01A009C2B7123967FF /* CreatorSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatorSummary.h; path = Models/CreatorSummary.h; sourceTree = "<group>"; };
+		AAF56A71297247B2278CD79F /* CreatorSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatorSummary.m; path = Models/CreatorSummary.m; sourceTree = "<group>"; };
+		AAB8C4E8FDA32DBF3F8580D7 /* CharacterList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharacterList.h; path = Models/CharacterList.h; sourceTree = "<group>"; };
+		AAA9EA3B3785282FAAEE5F9B /* CharacterList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharacterList.m; path = Models/CharacterList.m; sourceTree = "<group>"; };
+		AA83E19EC3F5A3062A4377F9 /* CharacterSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharacterSummary.h; path = Models/CharacterSummary.h; sourceTree = "<group>"; };
+		AA8CC9779CCAA8B6BA760CEA /* CharacterSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharacterSummary.m; path = Models/CharacterSummary.m; sourceTree = "<group>"; };
+		AA98086AD421DC55E4DA2E3E /* StoryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryList.h; path = Models/StoryList.h; sourceTree = "<group>"; };
+		AA06F4E8999D401B8EEBDC07 /* StoryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryList.m; path = Models/StoryList.m; sourceTree = "<group>"; };
+		AA1967BDBEDAC4F67B24A24C /* StorySummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StorySummary.h; path = Models/StorySummary.h; sourceTree = "<group>"; };
+		AA1C187836AC607504A1904B /* StorySummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StorySummary.m; path = Models/StorySummary.m; sourceTree = "<group>"; };
+		AA8B8EE93A2ECCB010780DFC /* EventList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventList.h; path = Models/EventList.h; sourceTree = "<group>"; };
+		AAB476E49D93CF7D34941FA8 /* EventList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventList.m; path = Models/EventList.m; sourceTree = "<group>"; };
+		AAE0DD5850B4E9A4350856D7 /* EventSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventSummary.h; path = Models/EventSummary.h; sourceTree = "<group>"; };
+		AAFD0DF3AE446861B4674ACE /* EventSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventSummary.m; path = Models/EventSummary.m; sourceTree = "<group>"; };
+		AAF1C049261AC5C3A4913C18 /* EventDataWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventDataWrapper.h; path = Models/EventDataWrapper.h; sourceTree = "<group>"; };
+		AAF601BBFA371A8D0E073ECF /* EventDataWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventDataWrapper.m; path = Models/EventDataWrapper.m; sourceTree = "<group>"; };
+		AAD5A5461C96028202CEF87A /* EventDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventDataContainer.h; path = Models/EventDataContainer.h; sourceTree = "<group>"; };
+		AA837A6D4D38367D2A89F41F /* EventDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventDataContainer.m; path = Models/EventDataContainer.m; sourceTree = "<group>"; };
+		AA7C9746508A01971549E3ED /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = Models/Event.h; sourceTree = "<group>"; };
+		AA1910BDD10ED2C6CC17A60F /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = Models/Event.m; sourceTree = "<group>"; };
+		AA4A08BF1B1EDB31E462BD55 /* ComicList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComicList.h; path = Models/ComicList.h; sourceTree = "<group>"; };
+		AA97BFB8177BF92E8CDBA91E /* ComicList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComicList.m; path = Models/ComicList.m; sourceTree = "<group>"; };
+		AA031F3CF9A7BC2677A7A842 /* SeriesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeriesList.h; path = Models/SeriesList.h; sourceTree = "<group>"; };
+		AACB12B9A4C0EEAA1BA4B45F /* SeriesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeriesList.m; path = Models/SeriesList.m; sourceTree = "<group>"; };
+		AAEAFEABA65541B7893B4009 /* SeriesDataWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeriesDataWrapper.h; path = Models/SeriesDataWrapper.h; sourceTree = "<group>"; };
+		AAE708B19280C443C206DAAE /* SeriesDataWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeriesDataWrapper.m; path = Models/SeriesDataWrapper.m; sourceTree = "<group>"; };
+		AAACA7B76738D699CB39F313 /* SeriesDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeriesDataContainer.h; path = Models/SeriesDataContainer.h; sourceTree = "<group>"; };
+		AA937C17947D5CD1A0019706 /* SeriesDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeriesDataContainer.m; path = Models/SeriesDataContainer.m; sourceTree = "<group>"; };
+		AA71DF644E9DF4E6376C3BC8 /* Series.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Series.h; path = Models/Series.h; sourceTree = "<group>"; };
+		AA6C84B6CC3D03E0E04C07B9 /* Series.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Series.m; path = Models/Series.m; sourceTree = "<group>"; };
+		AA41DA27B553121C6D133FEC /* StoryDataWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryDataWrapper.h; path = Models/StoryDataWrapper.h; sourceTree = "<group>"; };
+		AA12A4735C81DF2E85CEE989 /* StoryDataWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryDataWrapper.m; path = Models/StoryDataWrapper.m; sourceTree = "<group>"; };
+		AAB336BA0F7DA4C6AE361536 /* StoryDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryDataContainer.h; path = Models/StoryDataContainer.h; sourceTree = "<group>"; };
+		AA508C5F592E70B2E2B5CAE6 /* StoryDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryDataContainer.m; path = Models/StoryDataContainer.m; sourceTree = "<group>"; };
+		AA762EDFE4FBEB2006D3A2ED /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Story.h; path = Models/Story.h; sourceTree = "<group>"; };
+		AAEDE60FA248270762C5231A /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Story.m; path = Models/Story.m; sourceTree = "<group>"; };
+		AA4B3A36502ED1C503FC64D8 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Character.h; path = Models/Character.h; sourceTree = "<group>"; };
+		AADDD88EF21C46DB2D47B276 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Character.m; path = Models/Character.m; sourceTree = "<group>"; };
+		AAA8773BDD3BE0809B523246 /* CharacterDataWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharacterDataWrapper.h; path = Models/CharacterDataWrapper.h; sourceTree = "<group>"; };
+		AA7ADF53CD51EEE65F827EE4 /* CharacterDataWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharacterDataWrapper.m; path = Models/CharacterDataWrapper.m; sourceTree = "<group>"; };
+		AA2FB6CCD5DB9C4CBEC256A9 /* CharacterDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharacterDataContainer.h; path = Models/CharacterDataContainer.h; sourceTree = "<group>"; };
+		AABA2CC0D16FEC1644229789 /* CharacterDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharacterDataContainer.m; path = Models/CharacterDataContainer.m; sourceTree = "<group>"; };
+		AAF4C132D9AB82B07DBBD1F7 /* CreatorDataWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatorDataWrapper.h; path = Models/CreatorDataWrapper.h; sourceTree = "<group>"; };
+		AAAEA5AAC8E2BF8C1FEDA162 /* CreatorDataWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatorDataWrapper.m; path = Models/CreatorDataWrapper.m; sourceTree = "<group>"; };
+		AA4EBC2CBE48B5C30FD5FC52 /* CreatorDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatorDataContainer.h; path = Models/CreatorDataContainer.h; sourceTree = "<group>"; };
+		AAEBA30216CE136E1C8CA704 /* CreatorDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatorDataContainer.m; path = Models/CreatorDataContainer.m; sourceTree = "<group>"; };
+		AA67C085A96488F9C34491C8 /* Creator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Creator.h; path = Models/Creator.h; sourceTree = "<group>"; };
+		AAADBEDB833F79E695BFE085 /* Creator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Creator.m; path = Models/Creator.m; sourceTree = "<group>"; };
+		AA1A1504F93C482B0380C516 /* CharactersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharactersController.h; path = Controllers/CharactersController.h; sourceTree = "<group>"; };
+		AA4703B1407DED93B462279A /* CharactersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharactersController.m; path = Controllers/CharactersController.m; sourceTree = "<group>"; };
+		AAC06996581F8D15DC1591FB /* ComicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComicsController.h; path = Controllers/ComicsController.h; sourceTree = "<group>"; };
+		AA969B29D9ACFBC1B38FFD35 /* ComicsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComicsController.m; path = Controllers/ComicsController.m; sourceTree = "<group>"; };
+		AA229BC3756A383AD5326766 /* CreatorsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatorsController.h; path = Controllers/CreatorsController.h; sourceTree = "<group>"; };
+		AABA5A121DFBBE0E7DEEAAF5 /* CreatorsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatorsController.m; path = Controllers/CreatorsController.m; sourceTree = "<group>"; };
+		AA258F08647C62D19DD52CAB /* EventsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsController.h; path = Controllers/EventsController.h; sourceTree = "<group>"; };
+		AAEB6D42B19AB6F2AF0BFE97 /* EventsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsController.m; path = Controllers/EventsController.m; sourceTree = "<group>"; };
+		AA3B71FC902C847D00E12283 /* SeriesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeriesController.h; path = Controllers/SeriesController.h; sourceTree = "<group>"; };
+		AADB1764AE7DF18D95557C7B /* SeriesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeriesController.m; path = Controllers/SeriesController.m; sourceTree = "<group>"; };
+		AAD6C82703B51A29B7396D93 /* StoriesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoriesController.h; path = Controllers/StoriesController.h; sourceTree = "<group>"; };
+		AA0B8A88E554108B6F7DE777 /* StoriesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoriesController.m; path = Controllers/StoriesController.m; sourceTree = "<group>"; };
+
+        AA1173ED2E32674C48620A64 /* IHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IHttpClient.h; path = Http/Client/IHttpClient.h; sourceTree = "<group>"; };
+        AACAA536E84B6D2BF2CDE608 /* UnirestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnirestClient.h; path = Http/Client/UnirestClient.h; sourceTree = "<group>"; };
+        AA4D7A678B8A985E2C50CBFF /* UnirestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnirestClient.m; path = Http/Client/UnirestClient.m; sourceTree = "<group>"; };
+        AA406D274803136B567B1E87 /* HttpContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpContext.h; path = Http/Client/HttpContext.h; sourceTree = "<group>"; };
+        AAFF0E81765DC544641E6641 /* HttpContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc;name = HttpContext.m;  path = Http/Client/HttpContext.m; sourceTree = "<group>"; };
+
+        AA6B29F99CA666FECC5C487E /* HttpBodyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpBodyRequest.h; path = Http/Request/HttpBodyRequest.h; sourceTree = "<group>"; };
+        AA956F01D2F5D670DC35B362 /* HttpBodyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpBodyRequest.m; path = Http/Request/HttpBodyRequest.m; sourceTree = "<group>"; };
+        AA31975203C7EAF86B56F415 /* HttpMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpMethod.h; path = Http/Request/HttpMethod.h; sourceTree = "<group>"; };
+        AA98C9716BFF8AE5BFC28898 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpRequest.h; path = Http/Request/HttpRequest.h; sourceTree = "<group>"; };
+        AA87A2CD71372D1DB3FF6520 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpRequest.m; path = Http/Request/HttpRequest.m; sourceTree = "<group>"; };
+        AAF67FE2ADA5B77379090F09 /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpResponse.h; path = Http/Response/HttpResponse.h; sourceTree = "<group>"; };
+        AAE099E73BF6EE469D4AB217 /* HttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpResponse.m; path = Http/Response/HttpResponse.m; sourceTree = "<group>"; };
+        AA43B3EAF2E61EDA56E566C3 /* HttpStringResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpStringResponse.h; path = Http/Response/HttpStringResponse.h; sourceTree = "<group>"; };
+        AA78889B46E63B2815E8A97C /* HttpStringResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpStringResponse.m; path = Http/Response/HttpStringResponse.m; sourceTree = "<group>"; };
+        AA5D18C97F1ED2716A752AA8 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseController.h; path = Controllers/BaseController.h; sourceTree = "<group>"; };
+        AA940686A027FAC0683E87AE /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseController.m; path = Controllers/BaseController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+        AAC01B07AF245CB0CDD170FA /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                AA156D6B8C98CDFEC6517A86 /* Foundation.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        AAFA9A16D872F6A26FA42D16 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                AAB6FF0AA3C1D0F2B493849F /* UIKit.framework in Frameworks */,
+                AAEC3975AAF8AA1308CB9DB7 /* libMarvelComics.a in Frameworks */,
+                AAB95DE29AE69E555D2350F1 /* Foundation.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+        AAD4984ADF584177665EB2F2 = {
+            isa = PBXGroup;
+            children = (
+                AAE5FE10AA73B8B0BF58D30E /* MarvelComics */,
+                AA9EA450E464263161F6BD14 /* Frameworks */,
+                AA8858C16C1B7799495DB67C /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        AA8858C16C1B7799495DB67C /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                AAFFB6F12C34BFAB07465B52 /* libMarvelComics.a */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        AA9EA450E464263161F6BD14 /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+                AA6C52504A381F7C41B67182 /* Foundation.framework */,
+                AA12F8206E62E7B415ACF0E1 /* UIKit.framework */,
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
+        AAE5FE10AA73B8B0BF58D30E /* MarvelComics */ = {
+            isa = PBXGroup;
+            children = (
+                AA01453D8EB8DA40D84E17AB /* Models */,
+                AAAB4E1BA682F714FFFE50E0 /* Http */,
+                AA56C8CB120D74D9FD3C57DB /* Controllers */,
+                AA15EC52DAFD549AA1AE2F7F /* Supporting Files */,
+                AA6FB783652324EFB3E7BA31 /* APIHelper.m */,
+                AA49A4D678BA2CF98CE5E8A7 /* APIHelper.h */,
+                AA1C1510C4F3D56A3A951CFD /* APIError.m */,
+                AA48BFFBF934C1B6D2406E77 /* APIError.h */,
+                AA575224753AD22C62664B85 /* JSONValueTransformer+NSDate.h */,
+                AA49AA68151B551DE5F5CD4F /* JSONValueTransformer+NSDate.m */,
+                AAFCE585F7417595F3776274 /* Configuration.m */,
+                AAFDA2A62B62D6847BB95686 /* Configuration.h */,
+            );
+            path = MarvelComics;
+            sourceTree = "<group>";
+        };
+        AA15EC52DAFD549AA1AE2F7F /* Supporting Files */ = {
+            isa = PBXGroup;
+            children = (
+                AAD0DA7640475994DA60613B /* MarvelComics-Prefix.pch */,
+            );
+            name = "Supporting Files";
+            sourceTree = "<group>";
+        };
+        AA56C8CB120D74D9FD3C57DB /* Controllers */ = {
+            isa = PBXGroup;
+            children = (
+                AA5D18C97F1ED2716A752AA8 /* BaseController.h */,
+                AA940686A027FAC0683E87AE /* BaseController.m */,
+				AA1A1504F93C482B0380C516 /* CharactersController.h */,
+				AA4703B1407DED93B462279A /* CharactersController.m */,
+				AAC06996581F8D15DC1591FB /* ComicsController.h */,
+				AA969B29D9ACFBC1B38FFD35 /* ComicsController.m */,
+				AA229BC3756A383AD5326766 /* CreatorsController.h */,
+				AABA5A121DFBBE0E7DEEAAF5 /* CreatorsController.m */,
+				AA258F08647C62D19DD52CAB /* EventsController.h */,
+				AAEB6D42B19AB6F2AF0BFE97 /* EventsController.m */,
+				AA3B71FC902C847D00E12283 /* SeriesController.h */,
+				AADB1764AE7DF18D95557C7B /* SeriesController.m */,
+				AAD6C82703B51A29B7396D93 /* StoriesController.h */,
+				AA0B8A88E554108B6F7DE777 /* StoriesController.m */,
+            );
+            name = Controllers;
+            sourceTree = "<group>";
+        };
+        AA6945303944BAD4445B8A6F /* Client */ = {
+            isa = PBXGroup;
+            children = (
+                AA1173ED2E32674C48620A64 /* IHttpClient.h */,
+                AACAA536E84B6D2BF2CDE608 /* UnirestClient.h */,
+                AA4D7A678B8A985E2C50CBFF /* UnirestClient.m */,
+                AA406D274803136B567B1E87 /* HttpContext.h */,
+                AAFF0E81765DC544641E6641 /* HttpContext.m */,
+            );
+            name = Client;
+            sourceTree = "<group>";
+        };
+        AAAB4E1BA682F714FFFE50E0 /* Http */ = {
+            isa = PBXGroup;
+            children = (
+                AA613A713697E8E9E6AB31AB /* Request */,
+                AA6945303944BAD4445B8A6F /* Client */,
+                AAD6140F9EE3518738ACC212 /* Response */,
+            );
+            name = Http;
+            sourceTree = "<group>";
+        };
+        AA613A713697E8E9E6AB31AB /* Request */ = {
+            isa = PBXGroup;
+            children = (
+                AA6B29F99CA666FECC5C487E /* HttpBodyRequest.h */,
+                AA956F01D2F5D670DC35B362 /* HttpBodyRequest.m */,
+                AA31975203C7EAF86B56F415 /* HttpMethod.h */,
+                AA98C9716BFF8AE5BFC28898 /* HttpRequest.h */,
+                AA87A2CD71372D1DB3FF6520 /* HttpRequest.m */,
+            );
+            name = Request;
+            sourceTree = "<group>";
+        };
+        AAD6140F9EE3518738ACC212 /* Response */ = {
+            isa = PBXGroup;
+            children = (
+                AAF67FE2ADA5B77379090F09 /* HttpResponse.h */,
+                AAE099E73BF6EE469D4AB217 /* HttpResponse.m */,
+                AA43B3EAF2E61EDA56E566C3 /* HttpStringResponse.h */,
+                AA78889B46E63B2815E8A97C /* HttpStringResponse.m */,
+            );
+            name = Response;
+            sourceTree = "<group>";
+        };
+        AA01453D8EB8DA40D84E17AB /* Models */ = {
+            isa = PBXGroup;
+            children = (
+				AA691DD41EB291C72549767D /* FormatTypeEnum.h */,
+				AAD7C399C286583573D4549C /* FormatTypeEnumHelper.h */,
+				AAB1A0D79A607A0FCCA087DA /* FormatTypeEnumHelper.m */,
+				AAB915C64C5CF10A03083DBE /* DateDescriptorEnum.h */,
+				AA231080F9C0B77542E45235 /* DateDescriptorEnumHelper.h */,
+				AA325230058D481E25FDF13E /* DateDescriptorEnumHelper.m */,
+				AA89ABDEB95E35A523DDF753 /* ComicDataWrapper.h */,
+				AA06FF1CA9CECC8A5091250E /* ComicDataWrapper.m */,
+				AA0847BC88F5BC63A92EC596 /* ComicDataContainer.h */,
+				AAB30C1082E22DF66A3E69F8 /* ComicDataContainer.m */,
+				AA38D02FAC76F0D9F5DD2C02 /* Comic.h */,
+				AA8E0C9328149DF1BA4C0016 /* Comic.m */,
+				AA1F65C6F294A6511F7C2E4B /* TextObject.h */,
+				AA723A8DF536F57B8934AA92 /* TextObject.m */,
+				AA8C2323CA51609A6102FA66 /* UrlModel.h */,
+				AA52657BFDD6D56DF5EAB7BB /* UrlModel.m */,
+				AAC10961A143E49A08E31838 /* SeriesSummary.h */,
+				AA67704EF73DFF66FFFD4BFB /* SeriesSummary.m */,
+				AA23A2216789AFB4F0DB37CD /* ComicSummary.h */,
+				AA9F414ECE9B35E2078C177D /* ComicSummary.m */,
+				AA0D044C6B36DEEC2F582AF9 /* ComicDate.h */,
+				AAFA8C4563F812E556CC3AE8 /* ComicDate.m */,
+				AAC1BC0C72AC136979CD7697 /* ComicPrice.h */,
+				AAAB68E5EB81CD48AC4763E2 /* ComicPrice.m */,
+				AA7B4CB513D65C5D03CD0666 /* Thumbnail.h */,
+				AA006DB07C9398A176458A04 /* Thumbnail.m */,
+				AA3518B900ADF5EA88C38DDC /* Image.h */,
+				AAFA32EEC1127D744E331158 /* Image.m */,
+				AA6D1CB997991386EE5BD253 /* CreatorList.h */,
+				AA0342F1F5101E0CFE99B3E7 /* CreatorList.m */,
+				AA0F0B01A009C2B7123967FF /* CreatorSummary.h */,
+				AAF56A71297247B2278CD79F /* CreatorSummary.m */,
+				AAB8C4E8FDA32DBF3F8580D7 /* CharacterList.h */,
+				AAA9EA3B3785282FAAEE5F9B /* CharacterList.m */,
+				AA83E19EC3F5A3062A4377F9 /* CharacterSummary.h */,
+				AA8CC9779CCAA8B6BA760CEA /* CharacterSummary.m */,
+				AA98086AD421DC55E4DA2E3E /* StoryList.h */,
+				AA06F4E8999D401B8EEBDC07 /* StoryList.m */,
+				AA1967BDBEDAC4F67B24A24C /* StorySummary.h */,
+				AA1C187836AC607504A1904B /* StorySummary.m */,
+				AA8B8EE93A2ECCB010780DFC /* EventList.h */,
+				AAB476E49D93CF7D34941FA8 /* EventList.m */,
+				AAE0DD5850B4E9A4350856D7 /* EventSummary.h */,
+				AAFD0DF3AE446861B4674ACE /* EventSummary.m */,
+				AAF1C049261AC5C3A4913C18 /* EventDataWrapper.h */,
+				AAF601BBFA371A8D0E073ECF /* EventDataWrapper.m */,
+				AAD5A5461C96028202CEF87A /* EventDataContainer.h */,
+				AA837A6D4D38367D2A89F41F /* EventDataContainer.m */,
+				AA7C9746508A01971549E3ED /* Event.h */,
+				AA1910BDD10ED2C6CC17A60F /* Event.m */,
+				AA4A08BF1B1EDB31E462BD55 /* ComicList.h */,
+				AA97BFB8177BF92E8CDBA91E /* ComicList.m */,
+				AA031F3CF9A7BC2677A7A842 /* SeriesList.h */,
+				AACB12B9A4C0EEAA1BA4B45F /* SeriesList.m */,
+				AAEAFEABA65541B7893B4009 /* SeriesDataWrapper.h */,
+				AAE708B19280C443C206DAAE /* SeriesDataWrapper.m */,
+				AAACA7B76738D699CB39F313 /* SeriesDataContainer.h */,
+				AA937C17947D5CD1A0019706 /* SeriesDataContainer.m */,
+				AA71DF644E9DF4E6376C3BC8 /* Series.h */,
+				AA6C84B6CC3D03E0E04C07B9 /* Series.m */,
+				AA41DA27B553121C6D133FEC /* StoryDataWrapper.h */,
+				AA12A4735C81DF2E85CEE989 /* StoryDataWrapper.m */,
+				AAB336BA0F7DA4C6AE361536 /* StoryDataContainer.h */,
+				AA508C5F592E70B2E2B5CAE6 /* StoryDataContainer.m */,
+				AA762EDFE4FBEB2006D3A2ED /* Story.h */,
+				AAEDE60FA248270762C5231A /* Story.m */,
+				AA4B3A36502ED1C503FC64D8 /* Character.h */,
+				AADDD88EF21C46DB2D47B276 /* Character.m */,
+				AAA8773BDD3BE0809B523246 /* CharacterDataWrapper.h */,
+				AA7ADF53CD51EEE65F827EE4 /* CharacterDataWrapper.m */,
+				AA2FB6CCD5DB9C4CBEC256A9 /* CharacterDataContainer.h */,
+				AABA2CC0D16FEC1644229789 /* CharacterDataContainer.m */,
+				AAF4C132D9AB82B07DBBD1F7 /* CreatorDataWrapper.h */,
+				AAAEA5AAC8E2BF8C1FEDA162 /* CreatorDataWrapper.m */,
+				AA4EBC2CBE48B5C30FD5FC52 /* CreatorDataContainer.h */,
+				AAEBA30216CE136E1C8CA704 /* CreatorDataContainer.m */,
+				AA67C085A96488F9C34491C8 /* Creator.h */,
+				AAADBEDB833F79E695BFE085 /* Creator.m */,
+            );
+            name = Models;
+            sourceTree = "<group>";
+        };
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+        AA13B6076044B4EB7050DE39 /* Headers */ = {
+            isa = PBXHeadersBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+		AA888FE56C5C6B97F387B3E4 /* FormatTypeEnum.h in Headers */,
+		AAD81CB2B92569F65D5F85F3 /* FormatTypeEnumHelper.h in Headers */,
+		AA8065646B2C62D746F5CCFE /* DateDescriptorEnum.h in Headers */,
+		AA48B6E7C997C6979D5B5F52 /* DateDescriptorEnumHelper.h in Headers */,
+		AAC061F820D21962ED286C3E /* ComicDataWrapper.h in Headers */,
+		AAF21C703380CBC9A51102D9 /* ComicDataContainer.h in Headers */,
+		AA90A58CD075C42D1BDAC213 /* Comic.h in Headers */,
+		AA1BD1CAB964C238A9D31FA2 /* TextObject.h in Headers */,
+		AA28A64D8FD37E108FDB1200 /* UrlModel.h in Headers */,
+		AAAEF3CF52330DABC2CE8715 /* SeriesSummary.h in Headers */,
+		AAA900D5918D907805BEA408 /* ComicSummary.h in Headers */,
+		AA5DB4767ABA37C50109269D /* ComicDate.h in Headers */,
+		AAF995732AD819678D6D8B16 /* ComicPrice.h in Headers */,
+		AAB3A35368402D11D617E7C2 /* Thumbnail.h in Headers */,
+		AAF9095C275F09ECF2F2B519 /* Image.h in Headers */,
+		AA501498A9436847F1331FCB /* CreatorList.h in Headers */,
+		AA629885CB6059F5A7042D1E /* CreatorSummary.h in Headers */,
+		AA995871B96B2B18B1F17F63 /* CharacterList.h in Headers */,
+		AABAB776BF47F7005E2DEAD5 /* CharacterSummary.h in Headers */,
+		AA591DC980F0604392E5C395 /* StoryList.h in Headers */,
+		AAE12108177AA516EFFF3A91 /* StorySummary.h in Headers */,
+		AA3D68555965ED3B07BB28C3 /* EventList.h in Headers */,
+		AA330ABFDB63252DD7B9F0AE /* EventSummary.h in Headers */,
+		AADB6AE1728D0E0CE1EC486F /* EventDataWrapper.h in Headers */,
+		AA289CCD4757163CFCABFF92 /* EventDataContainer.h in Headers */,
+		AA3B7425C49E8E8073E0808D /* Event.h in Headers */,
+		AA74967A7A2A7CC974A68860 /* ComicList.h in Headers */,
+		AA432BB615347D76E54B1E95 /* SeriesList.h in Headers */,
+		AA2B5681A826BF3CB4011092 /* SeriesDataWrapper.h in Headers */,
+		AA1DC01B26E46385A537BA1E /* SeriesDataContainer.h in Headers */,
+		AA19EB9449DDC72DA6F4E2BE /* Series.h in Headers */,
+		AA9A91CBFE9FC7872D3CCE7E /* StoryDataWrapper.h in Headers */,
+		AA26514A93F66DE725AFBFF6 /* StoryDataContainer.h in Headers */,
+		AAA51962AE1DDCC776624AFD /* Story.h in Headers */,
+		AA640E7D1F752D2EFA027F51 /* Character.h in Headers */,
+		AA3B09123D33490133674A6B /* CharacterDataWrapper.h in Headers */,
+		AA3D0E9CD6EB5886E4D02247 /* CharacterDataContainer.h in Headers */,
+		AAEE39E13646CD65FAA46965 /* CreatorDataWrapper.h in Headers */,
+		AAAF8B480F5DC9730E782F5F /* CreatorDataContainer.h in Headers */,
+		AA9537E0E9F2269D3D10E1BB /* Creator.h in Headers */,
+		AA382613526F5C349166FBF1 /* CharactersController.h in Headers */,
+		AA5F845E164EA5A5480C1C8D /* ComicsController.h in Headers */,
+		AA1C8837647E18706EDB576B /* CreatorsController.h in Headers */,
+		AACA5C44BC3F361B8BD153F5 /* EventsController.h in Headers */,
+		AAA83D1202C733C62E90E587 /* SeriesController.h in Headers */,
+		AAE7BF3CD2B4FAE689A69F2E /* StoriesController.h in Headers */,
+        AAB3AA4B658C5443700D0C0C /* APIHelper.h in Headers */,
+        AA5C98767EC06D4E40B57A79 /* JSONValueTransformer+NSDate.h in Headers */,
+        AAD9244039DF31452C9D7C2B /* Configuration.h in Headers */,
+        AA9A82CCE1219D4C5910FE3B /* APIError.h in Headers */,
+        AAD8F51F714DD5966CCD659B /* HttpBodyRequest.h in Headers */,
+        AA727179A75A81C7BFF5708F /* HttpRequest.h in Headers */,
+        AA561654D3DF3A6B4926FBE4 /* IHttpClient.h in Headers */,
+        AAA4DBB5CE589B5B0303FD74 /* HttpContext.h in Headers */,
+
+        AABB789B7FACBAA15967C8E9 /* BaseController.h in Headers */,
+        AAFBD14918A6E076A0BF62B7 /* HttpResponse.h in Headers */,
+        AADD0D6E9D0D2ECB46296055 /* UnirestClient.h in Headers */,
+        AA9312BDFDCA04EB5F7358C2 /* HttpStringResponse.h in Headers */,
+        AA033D32966F32BFBD65DD34 /* HttpMethod.h in Headers */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+        AA28707B011D40DC5FCAABD7 /* MarvelComics */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = AA82ACA3B71B3D8AC53528FE /* Build configuration list for PBXNativeTarget "MarvelComics" */;
+            buildPhases = (
+                AAAD8BEDE6C04F26CD9A967F /* Sources */,
+                AAC01B07AF245CB0CDD170FA /* Frameworks */,
+                AA6976EEF676DCB4C0327BF2 /* CopyFiles */,
+                AA13B6076044B4EB7050DE39 /* Headers */,
+                AA26BF6507704A6409F338B9 /* Build Framework */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = MarvelComics;
+            productName = MarvelComics;
+            productReference = AAFFB6F12C34BFAB07465B52 /* libMarvelComics.a */;
+            productType = "com.apple.product-type.library.static";
+        };		
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+        AAD86B0C4A909E780CCAF44D /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0500;
+                ORGANIZATIONNAME = APIMatic;
+            };
+            buildConfigurationList = AA3D5C81EBA16BCDBA6678EE /* Build configuration list for PBXProject "MarvelComics" */;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+            );
+            mainGroup = AAD4984ADF584177665EB2F2;
+            productRefGroup = AA8858C16C1B7799495DB67C /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                AA28707B011D40DC5FCAABD7 /* MarvelComics */,
+                AAEE5E87CAD05D168656264B /* Framework */,
+            );
+        };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+        AA26BF6507704A6409F338B9 /* Build Framework */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "Build Framework";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "#Credit: http://www.raywenderlich.com/65964/create-a-framework-for-ios\nset -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -f -r \"${PODS_ROOT}/Headers/Public/JSONModel/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Copy the public headers into the framework\n/bin/cp -f -r \"${PODS_ROOT}/Headers/Public/Unirest/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Copy the public headers into the framework\n/bin/cp -f -r \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+        };
+        AACF2FCBE910DF27909EEA33 /* MultiBuild Framework */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "MultiBuild Framework";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "# Taken from Ray Wenderlich tutorial: http://www.raywenderlich.com/65964/create-a-framework-for-ios\n\nset -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nOUTPUT_LOCATION=\"${HOME}/Desktop\"\nif [ ! -w ${OUTPUT_LOCATION} ] ; then OUTPUT_LOCATION=\"${XCS_OUTPUT_DIR}\" ; fi\nif [ ! -w ${OUTPUT_LOCATION} ] ; then OUTPUT_LOCATION=\"/tmp\" ; fi\nif [ ! -w ${OUTPUT_LOCATION} ] ; then echo \"Couldn't find anywhere to write! Dying.\"; exit 1 ; fi\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\necho \"RW_SDK_PLATFORM is ${RW_SDK_PLATFORM}\"\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\necho \"RW_SDK_VERSION is ${RW_SDK_VERSION}\"\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\necho \"RW_OTHER_PLATFORM is ${RW_OTHER_PLATFORM}\"\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\necho \"BUILT_PRODUCTS_DIR is ${BUILT_PRODUCTS_DIR}\"\necho \"RW_OTHER_BUILT_PRODUCTS_DIR is ${RW_OTHER_BUILT_PRODUCTS_DIR}\"\n\n# remove alias and copy, if it's archive\nUNINSTALLED_PRODUCTS_DIRECTORY=\"${BUILT_PRODUCTS_DIR}/../../IntermediateBuildFilesPath/UninstalledProducts\"\n\nif [ -d \"$UNINSTALLED_PRODUCTS_DIRECTORY\" ]; then\necho \"Looks like we're archiving, fixing aliases...\"\nrm \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\"\ncp \"${UNINSTALLED_PRODUCTS_DIRECTORY}/${RW_INPUT_STATIC_LIB}\" \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\"\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\nif [ -d \"$UNINSTALLED_PRODUCTS_DIRECTORY\" ]; then\necho \"Looks like we're archiving, fixing aliases...\"\nrm \"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\"\ncp \"${UNINSTALLED_PRODUCTS_DIRECTORY}/${RW_INPUT_STATIC_LIB}\" \"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\"\nfi\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"";
+        };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+        AAAD8BEDE6C04F26CD9A967F /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                AA2F009821D5B379D796665A /* APIHelper.m in Sources */,
+                AA3FC84281C8B49DAC26F961 /* APIError.m in Sources */,
+                AABE48236E273EF1DB3275E0 /* Configuration.m in Sources */,
+                AA5D573CBB0B8B855EA01619 /* JSONValueTransformer+NSDate.m in Sources */,
+				AAE18BCCA90071B59A9C2C11 /* FormatTypeEnumHelper.m in Sources */,
+				AA7921CF7D257EECDAF2706D /* DateDescriptorEnumHelper.m in Sources */,
+				AAB2612472517C51B50504D4 /* ComicDataWrapper.m in Sources */,
+				AAFB997838178E4C5D031C14 /* ComicDataContainer.m in Sources */,
+				AA4379700084284AC9475A9A /* Comic.m in Sources */,
+				AAF020F01BCB11F5AD193E45 /* TextObject.m in Sources */,
+				AAAEE46878D4B318C5FC6C02 /* UrlModel.m in Sources */,
+				AAB718CD46913720F0F33D31 /* SeriesSummary.m in Sources */,
+				AA363348F55990D2B61D3CE4 /* ComicSummary.m in Sources */,
+				AA93E8F24F27CF23919DE724 /* ComicDate.m in Sources */,
+				AAF9C10774AB757E2A5BCCCA /* ComicPrice.m in Sources */,
+				AABACA3DB16E3DD0D33B8F48 /* Thumbnail.m in Sources */,
+				AA11A522F7AB90034284F2E3 /* Image.m in Sources */,
+				AAD9C6523B7D28F7EF7D4540 /* CreatorList.m in Sources */,
+				AAD46954EF98ACB5559F66DB /* CreatorSummary.m in Sources */,
+				AA7F1E91C2131B80062B9849 /* CharacterList.m in Sources */,
+				AAE3FC124BAF8271569A849C /* CharacterSummary.m in Sources */,
+				AAA24F2E7E0EEEF2EA8E3A89 /* StoryList.m in Sources */,
+				AA205F527EF1F01258AA48C7 /* StorySummary.m in Sources */,
+				AA5F82A9002FD2A58B74ACC0 /* EventList.m in Sources */,
+				AA2A4A3BBFC0E76811CA07C2 /* EventSummary.m in Sources */,
+				AA390B28D2AC9388D393FAAD /* EventDataWrapper.m in Sources */,
+				AA76465D40C5A7C714CC7330 /* EventDataContainer.m in Sources */,
+				AA448FE6531B3670B8D5E6A0 /* Event.m in Sources */,
+				AADAE894302957C302CB7DF7 /* ComicList.m in Sources */,
+				AA48367DA3AEF9B077CB1EF3 /* SeriesList.m in Sources */,
+				AA218CAA2BCCED0CD8EB63B9 /* SeriesDataWrapper.m in Sources */,
+				AA2FE555ACE8F63A7C8F0B53 /* SeriesDataContainer.m in Sources */,
+				AAAE523072B3C8868CCC72B2 /* Series.m in Sources */,
+				AA0CC349AE1FBD4C64032190 /* StoryDataWrapper.m in Sources */,
+				AA4DFDE294659535231E5DCF /* StoryDataContainer.m in Sources */,
+				AA1C33AB60F3605B4FD0E927 /* Story.m in Sources */,
+				AAD064B180322E19A8DBDC6E /* Character.m in Sources */,
+				AA35E0AA56D156C862BBF6FD /* CharacterDataWrapper.m in Sources */,
+				AA1069D90143C794EF18B404 /* CharacterDataContainer.m in Sources */,
+				AAB262C3D8CC656DB79DEFC7 /* CreatorDataWrapper.m in Sources */,
+				AA7AE478487CA60EBCE9C609 /* CreatorDataContainer.m in Sources */,
+				AAA59FBB6C35FAD99178B996 /* Creator.m in Sources */,
+				AAF58AC5930372CD90FF4B35 /* CharactersController.m in Sources */,
+				AA663766F7252C65D4471137 /* ComicsController.m in Sources */,
+				AA2CCDFF6625E11579778D0E /* CreatorsController.m in Sources */,
+				AA5AC433CC1F96CB20D48EF9 /* EventsController.m in Sources */,
+				AAD3A1508B9EE3373F60342A /* SeriesController.m in Sources */,
+				AAC04098B81E89417DF527CC /* StoriesController.m in Sources */,
+                 AA751EC3D8D1E1F02BC41D50 /* HttpBodyRequest.m in Sources */,
+                 AAD0FE4E6546B42C42539D57 /* BaseController.m in Sources */,
+                 AAC751CC6398471D8AE95DF2 /* UnirestClient.m in Sources */,
+                 AADE4B211C778689E60B2D58 /* UnirestClient.m in Sources */,
+                 AA19178EE1D12F29A92B4F31 /* HttpResponse.m in Sources */,
+                 AA9B8CABE328A66C2F9C101E /* HttpStringResponse.m in Sources */,
+                 AA1A7ED3A893EFFCD4DDD12E /* HttpRequest.m in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+        AA64289540A97CFC567617A7 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = AA28707B011D40DC5FCAABD7 /* MarvelComics */;
+            targetProxy = AACEBD8E9E09F53ADB403022 /* PBXContainerItemProxy */;
+        };
+        AAE710D60AF9FA72F99ADA05 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = AA28707B011D40DC5FCAABD7 /* MarvelComics */;
+            targetProxy = AACEBD8E9E09F53ADB403022 /* PBXContainerItemProxy */;
+        };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+        AA424ECAE71F053C848A780A /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                PRODUCT_NAME = "$(TARGET_NAME)";
+            };
+            name = Debug;
+        };
+        AACEA0FFC440D77D3D224A1D /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                PRODUCT_NAME = "$(TARGET_NAME)";
+            };
+            name = Release;
+        };
+        AAD9F6B0D7ABAB09FF5859BE /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                COPY_PHASE_STRIP = NO;
+                GCC_C_LANGUAGE_STANDARD = gnu99;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+            };
+            name = Debug;
+        };
+        AA05B27B66E0C62144B5D5CC /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                COPY_PHASE_STRIP = YES;
+                ENABLE_NS_ASSERTIONS = NO;
+                GCC_C_LANGUAGE_STANDARD = gnu99;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+                SDKROOT = iphoneos;
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        AA297EF2FAFA3A4730512B1A /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                DEAD_CODE_STRIPPING = NO;
+                DSTROOT = /tmp/MarvelComics.dst;
+                GCC_PRECOMPILE_PREFIX_HEADER = YES;
+                GCC_PREFIX_HEADER = "MarvelComics/MarvelComics-Prefix.pch";
+                OTHER_LDFLAGS = "$(inherited)";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+                SKIP_INSTALL = YES;
+                STRIP_INSTALLED_PRODUCT = NO;
+                STRIP_STYLE = "non-global";
+            };
+            name = Debug;
+        };
+        AA898798C13E56D992CE646A /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                COPY_PHASE_STRIP = NO;
+                DEAD_CODE_STRIPPING = NO;
+                DSTROOT = /tmp/MarvelComics.dst;
+                GCC_PRECOMPILE_PREFIX_HEADER = YES;
+                GCC_PREFIX_HEADER = "MarvelComics/MarvelComics-Prefix.pch";
+                OTHER_LDFLAGS = "$(inherited)";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+                SKIP_INSTALL = YES;
+                STRIP_INSTALLED_PRODUCT = NO;
+                STRIP_STYLE = "non-global";
+            };
+            name = Release;
+        };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+        AA6B40043ACECBE13E13500A /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                AA424ECAE71F053C848A780A /* Debug */,
+                AACEA0FFC440D77D3D224A1D /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+        };
+        AA3D5C81EBA16BCDBA6678EE /* Build configuration list for PBXProject "MarvelComics" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                AAD9F6B0D7ABAB09FF5859BE /* Debug */,
+                AA05B27B66E0C62144B5D5CC /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        AA82ACA3B71B3D8AC53528FE /* Build configuration list for PBXNativeTarget "MarvelComics" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                AA297EF2FAFA3A4730512B1A /* Debug */,
+                AA898798C13E56D992CE646A /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+/* End XCConfigurationList section */
+    };
+    rootObject = AAD86B0C4A909E780CCAF44D /* Project object */;
+}
